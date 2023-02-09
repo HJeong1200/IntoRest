@@ -61,10 +61,10 @@ const MenuList = styled.div`
   justify-content: flex-start;
   flex-direction: column;
 
-  @media (max-width: 1179px) {
+  /* @media (max-width: 1179px) {
     display: ${props => (props.isListHidden ? 'none' : 'flex')};
     z-index: 101;
-  }
+  } */
 `;
 
 const SelectedButton = styled(SidebarMainButton)`
@@ -83,9 +83,9 @@ const MenuButton = styled.button`
   border: none;
   background-color: rgba(0, 0, 0, 0.1);
 
-  @media (max-width: 1179px) {
+  /* @media (max-width: 1179px) {
     display: ${props => (props.isListHidden ? 'flex' : 'none')};
-  }
+  } */
 
   &:hover {
     cursor: pointer;

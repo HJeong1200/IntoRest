@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  width: var(--content-width);
+  /* width: var(--content-width); */
+  width: 70vw;
   /* padding-right: calc(var(--body-width) - var(--content-width) - var(--sidebar-width)); */
 `;
 

@@ -28,11 +28,7 @@ const SeriesListPage = () => {
   const [searchParams] = useSearchParams();
   const curPage = searchParams.get('page');
 
-  // seriesList에 seriesListDummy.data
-  // seriesPageInfo에 seriesListDummy.pageInfo
   const { seriesList, seriesPageInfo, isLoading } = useGetSeriesList(category || 'All', curPage);
-
-  console.log(seriesList);
 
   return (
     <Container>
