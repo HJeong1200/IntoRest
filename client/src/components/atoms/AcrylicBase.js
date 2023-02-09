@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const AcrylicBase = styled.div`
   display: flex;
   flex-direction: ${props => props.flexDirection || 'row'};
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 10px;
   gap: 10px;

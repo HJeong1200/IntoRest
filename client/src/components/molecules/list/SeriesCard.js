@@ -13,7 +13,7 @@ const Container = styled.div`
   align-items: flex-start;
   padding: 0px;
   gap: 10px;
-  width: var(--content-width);
+  width: 100%;
   margin-bottom: 40px;
   background: url(https://unsplash.it/1920/1080/?random) rgba(45, 45, 45, 0.44);
   border-radius: 30px;
@@ -24,7 +24,7 @@ const InfoLayer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   padding: 15px 0px;
   gap: 10px;
 
@@ -87,7 +87,7 @@ const UserBox = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px;
+  /* padding: 10px; */
   gap: 20px;
 
   width: fit-content;
@@ -95,7 +95,7 @@ const UserBox = styled.div`
   color: #fff;
 `;
 const Title = styled.div`
-  width: ${props => props.width || '326px'};
+  /* width: ${props => props.width || '326px'}; */
   height: fit-content;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -107,7 +107,7 @@ const Title = styled.div`
   }
 `;
 const Paragraph = styled.div`
-  width: ${props => props.width || '326px'};
+  /* width: ${props => props.width || '326px'}; */
   height: 42px;
   overflow: hidden;
   text-overflow: ellipsis;
