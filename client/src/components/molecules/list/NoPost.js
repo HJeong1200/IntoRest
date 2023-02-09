@@ -34,7 +34,7 @@ const InfoLayer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   padding: 18px 20px;
   width: fit-content;
   height: fit-content;
@@ -75,7 +75,7 @@ const ContextLayer = styled.div`
 `;
 
 const Title = styled.div`
-  width: ${props => props.width || '534px'};
+  /* width: ${props => props.width || '534px'}; */
   height: 48px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -84,7 +84,7 @@ const Title = styled.div`
   ${LabelListTitle}
 `;
 const Paragraph = styled.div`
-  width: ${props => props.width || '534px'};
+  /* width: ${props => props.width || '534px'}; */
   height: 42px;
   overflow: hidden;
   text-overflow: ellipsis;

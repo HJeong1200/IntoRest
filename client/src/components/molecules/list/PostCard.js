@@ -78,7 +78,7 @@ const Box2 = styled.div`
   ${LabelMedium}
 `;
 const Title = styled.div`
-  width: ${props => props.width || '534px'};
+  /* width: ${props => props.width || '534px'}; */
   height: 48px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -88,7 +88,7 @@ const Title = styled.div`
 `;
 
 const Paragraph = styled.div`
-  width: ${props => props.width || '534px'};
+  /* width: ${props => props.width || '534px'}; */
   height: 42px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -98,7 +98,7 @@ const Paragraph = styled.div`
 `;
 
 const ImageLayer = styled.img`
-  width: ${props => props.imgWidth || '280px'};
+  /* width: ${props => props.imgWidth || '280px'}; */
   height: 180px;
 
   background: var(--gray-800);
@@ -128,7 +128,7 @@ const PostThinCard = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 880px;
+  /* width: 880px; */
   padding-right: 10px;
   background: ${props => (props.selected ? 'var(--gray-700)' : '#efefef')};
   color: ${props => (props.selected ? 'var(--gray-300)' : '')};
@@ -193,7 +193,7 @@ const PostCard = ({ boxShadow, width, post, handleClick, selected }) => {
  * @param {string} width - text의 길이
  * @returns {JSX.Element} - PostListStack을 나타내는 컴포넌트
  */
-const PostListStack = ({ boxShadow = 'var(--boxShadow-stack)', width = '278px', post, imgWidth = '100px' }) => {
+const PostListStack = ({ boxShadow = 'var(--boxShadow-stack)', width, post }) => {
   const { title, description, createdAt, modifiedAt, writer } = post;
 
   return (
@@ -208,7 +208,7 @@ const PostListStack = ({ boxShadow = 'var(--boxShadow-stack)', width = '278px', 
           </Box>
         </ContextLayer>
       </InfoLayer>
-      <ImageLayer width={imgWidth} />
+      <ImageLayer />
     </Container>
   );
 };

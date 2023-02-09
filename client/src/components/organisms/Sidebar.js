@@ -52,6 +52,11 @@ const Sidebar = () => {
 const Container = styled.aside`
   width: var(--sidebar-width);
   height: 100vh;
+
+  @media (max-width: 1229px) {
+    width: 40px;
+    height: 0;
+  }
 `;
 
 const MenuList = styled.div`
@@ -61,10 +66,10 @@ const MenuList = styled.div`
   justify-content: flex-start;
   flex-direction: column;
 
-  /* @media (max-width: 1179px) {
+  @media (max-width: 1229px) {
     display: ${props => (props.isListHidden ? 'none' : 'flex')};
     z-index: 101;
-  } */
+  }
 `;
 
 const SelectedButton = styled(SidebarMainButton)`
@@ -83,9 +88,9 @@ const MenuButton = styled.button`
   border: none;
   background-color: rgba(0, 0, 0, 0.1);
 
-  /* @media (max-width: 1179px) {
+  @media (max-width: 1229px) {
     display: ${props => (props.isListHidden ? 'flex' : 'none')};
-  } */
+  }
 
   &:hover {
     cursor: pointer;
@@ -95,7 +100,7 @@ const MenuButton = styled.button`
 const Modal = styled.div`
   display: none;
 
-  @media (max-width: 1179px) {
+  @media (max-width: 1229px) {
     display: ${props => (props.isListHidden ? 'none' : 'block')};
     width: 100vw;
     height: 100vh;
