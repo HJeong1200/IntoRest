@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import { seriesListDummy } from '../constants/dummyData';
 import getSeriesList from '../functions/getSeriesList';
 
 /**
@@ -31,6 +32,10 @@ const useGetSeriesList = (category, page = 1) => {
         console.log(err);
         setIsLoading(false);
         setIsLoadingError(true);
+      })
+      .finally(() => {
+        setSeriesList(seriesListDummy.data);
+        setSeriesPageInfo(seriesListDummy.pageInfo);
       });
   }, [category, page]);
 

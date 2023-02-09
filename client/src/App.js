@@ -33,7 +33,7 @@ const PostEditPage = lazy(() => import('./components/pages/PostEditPage'));
 const App = () => {
   const { authorization } = useAuthStore(state => state);
 
-  axios.defaults.baseURL = 'http://34.64.243.160/';
+  // axios.defaults.baseURL = 'http://34.64.243.160/';
   axios.defaults.headers.authorization = authorization;
 
   return (
